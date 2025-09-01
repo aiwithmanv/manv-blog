@@ -1,0 +1,6 @@
+# Ignore old lockfiles to prevent caching issues
+pnpm-lock.yaml.bak
+*.log
+node_modules
+.env.local
+.env.*.local
