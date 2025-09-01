@@ -150,7 +150,7 @@ export default async function HomePage({
                   <span className="sr-only">X</span>
                 </a>
                 <a 
-                  href="https://linkedin.com/in/placeholder" 
+                  href="https://www.linkedin.com/in/manvendra-ai" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center size-10 rounded-full bg-secondary/80 hover:bg-secondary transition-colors"
@@ -161,7 +161,7 @@ export default async function HomePage({
                   <span className="sr-only">LinkedIn</span>
                 </a>
                 <a 
-                  href="https://instagram.com/placeholder" 
+                  href="https://www.instagram.com/aiwithmanv/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center size-10 rounded-full bg-secondary/80 hover:bg-secondary transition-colors"
