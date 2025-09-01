@@ -3,11 +3,6 @@
   "buildCommand": "pnpm install --no-frozen-lockfile && pnpm run build",
   "installCommand": "pnpm install --no-frozen-lockfile",
   "outputDirectory": ".next",
-  "functions": {
-    "app/api/**/*.ts": {
-      "runtime": "nodejs20.x"
-    }
-  },
   "env": {
     "PNPM_FLAGS": "--no-frozen-lockfile"
   }
