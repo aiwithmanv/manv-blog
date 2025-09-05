@@ -12,6 +12,7 @@ import { AuthorCard } from "@/components/author-card";
 import { ReadMoreSection } from "@/components/read-more-section";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { HashScrollHandler } from "@/components/hash-scroll-handler";
+import { SocialShare } from "@/components/social-share";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -124,6 +125,12 @@ export default async function BlogPost({ params }: PageProps) {
                   <p>Content not available</p>
                 )}
               </div>
+              
+              <SocialShare 
+                url={`${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/blog/${sanityPost.slug.current}`}
+                title={sanityPost.title}
+                description={sanityPost.description}
+              />
             </div>
             <div className="mt-10">
               {await ReadMoreSection({

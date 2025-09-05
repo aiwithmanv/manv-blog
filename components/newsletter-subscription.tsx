@@ -74,7 +74,7 @@ export default function NewsletterSubscription({
   };
 
   return (
-    <section className="bg-gradient-to-b from-background to-secondary/30 border-t border-border">
+    <section className="bg-gradient-to-b from-purple-100 to-background dark:from-purple-900/30 dark:to-background/95 border-t border-border">
       <div className={`max-w-7xl mx-auto w-full px-6 lg:px-0 py-16 ${className}`}>
       <div className="flex flex-col items-center text-center">
         {showTitle && (
