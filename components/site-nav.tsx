@@ -23,36 +23,24 @@ export function SiteNav() {
 
         <div className="flex flex-1 w-full justify-end">
           <nav className="flex items-center space-x-6">
-            <a 
-              href="#home" 
+            <Link 
+              href="/#home" 
               className="text-sm font-medium transition-colors hover:text-primary cursor-pointer"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
-              }}
             >
               Home
-            </a>
-            <a 
-              href="#blog" 
+            </Link>
+            <Link 
+              href="/#blog" 
               className="text-sm font-medium transition-colors hover:text-primary cursor-pointer"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('blog')?.scrollIntoView({ behavior: 'smooth' });
-              }}
             >
               Blog
-            </a>
-            <a 
-              href="#about" 
+            </Link>
+            <Link 
+              href="/#about" 
               className="text-sm font-medium transition-colors hover:text-primary cursor-pointer"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
-              }}
             >
               About Me
-            </a>
+            </Link>
             <ThemeToggle />
           </nav>
         </div>

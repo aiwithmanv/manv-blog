@@ -74,7 +74,8 @@ export default function NewsletterSubscription({
   };
 
   return (
-    <div className={`max-w-7xl mx-auto w-full px-6 lg:px-0 my-16 py-12 bg-secondary/20 rounded-lg ${className}`}>
+    <section className="bg-gradient-to-b from-background to-secondary/30 border-t border-border">
+      <div className={`max-w-7xl mx-auto w-full px-6 lg:px-0 py-16 ${className}`}>
       <div className="flex flex-col items-center text-center">
         {showTitle && (
           <h2 className="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
@@ -123,6 +124,7 @@ export default function NewsletterSubscription({
           )}
         </form>
       </div>
-    </div>
+      </div>
+    </section>
   );
 }
