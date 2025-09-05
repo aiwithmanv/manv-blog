@@ -125,7 +125,8 @@ export default async function HomePage({
                 <NewsletterSubscription 
                   className="bg-transparent p-0 mt-1 md:pl-0" 
                   showTitle={false} 
-                  showDescription={false} 
+                  showDescription={false}
+                  showBackground={false} 
                 />
               </div>
             </div>

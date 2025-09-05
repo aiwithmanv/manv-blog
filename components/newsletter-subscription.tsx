@@ -6,12 +6,14 @@ interface NewsletterSubscriptionProps {
   className?: string;
   showTitle?: boolean;
   showDescription?: boolean;
+  showBackground?: boolean;
 }
 
 export default function NewsletterSubscription({ 
   className = '', 
   showTitle = true, 
-  showDescription = true 
+  showDescription = true,
+  showBackground = true 
 }: NewsletterSubscriptionProps) {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -74,7 +76,7 @@ export default function NewsletterSubscription({
   };
 
   return (
-    <section className="bg-gradient-to-b from-purple-100 to-background dark:from-purple-900/30 dark:to-background/95 border-t border-border">
+    <section className={`${showBackground ? 'bg-gradient-to-b from-purple-100 to-background dark:from-purple-900/30 dark:to-background/95 border-t border-border' : ''}`}>
       <div className={`max-w-7xl mx-auto w-full px-6 lg:px-0 py-16 ${className}`}>
       <div className="flex flex-col items-center text-center">
         {showTitle && (
